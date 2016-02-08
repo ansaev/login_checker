@@ -1,7 +1,5 @@
 from pytest import fixture
-
 import time
-
 from login_check import LoginChecker
 
 
@@ -60,5 +58,5 @@ class TestClass:
             self.checker.check_separated_regex(test_case['name'])
         end_time = time.time()
         print("separated_regex:", end_time-start_time)
-        assert False
+        assert True
 
